@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Daily Pulse</title>
+    <title>Michaelangelo Nicholas Tsaparlis - Daily Pulse</title>
+
+    <meta name="description" content="A public daily pulse showing that Michaelangelo Nicholas Tsaparlis checked in today.">
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            text-align: center;
+            font-size: 20px;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-<h1>Michaelangelo Nicholas Tsaparlis</h1>
 
-<p>
-Pulsed today:
-<span id="date"></span>
-</p>
+    <div class="content">
+        Michaelangelo Nicholas Tsaparlis
+        <br><br>
+        Pulsed today: <span id="date"></span>
+    </div>
 
-<script>
-const today = new Date();
+    <script>
+        const today = new Date();
 
-document.getElementById("date").textContent =
-today.toLocaleDateString("en-US", {
-  year: "numeric",
-  month: "long",
-  day: "numeric"
-});
-</script>
+        document.getElementById("date").textContent =
+            today.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+            });
+    </script>
 
 </body>
 </html>
